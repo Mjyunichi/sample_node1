@@ -88,7 +88,7 @@ app.get('/*', function (req, res) {
       res.send('{ pageCount: ' + count + '}');
     });
   } else {
-    res.render('index2.html');
+    res.render('index3.html');
   }
 });
 
