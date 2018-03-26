@@ -70,10 +70,10 @@ app.get('/', function (req, res) {
       if (err) {
         console.log('Error running count. Message:\n'+err);
       }
-      res.render('index3.html', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('index2.html', { pageCountMessage : count, dbInfo: dbDetails });
     });
   } else {
-    res.render('index3.html', { pageCountMessage : null});
+    res.render('index2.html', { pageCountMessage : null});
   }
 });
 
@@ -88,7 +88,7 @@ app.get('/*', function (req, res) {
       res.send('{ pageCount: ' + count + '}');
     });
   } else {
-    res.render('index3.html');
+    res.render('index2.html');
   }
 });
 
